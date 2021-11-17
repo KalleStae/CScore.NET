@@ -1,0 +1,52 @@
+2021-07-10 15:31:07.995 +02:00 [INF] Loaded 3 extensions
+2021-07-10 15:31:08.851 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.301\
+2021-07-10 15:31:10.921 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-10 15:31:10.924 +02:00 [INF] Setting entrypoint to user selected project: D:\Eigene Dateien\Documents\#C#\AUDIO\cscore-master\cscore-master\Samples\Recorder\recorder.csproj
+2021-07-10 15:31:10.927 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-10 15:31:10.948 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-10 15:31:15.998 +02:00 [INF] Skipping upgrade step Back up project
+2021-07-10 15:31:16.001 +02:00 [INF] Upgrade step Back up project skipped
+2021-07-10 15:31:20.047 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-10 15:31:34.702 +02:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-10 15:31:34.711 +02:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-10 15:31:35.125 +02:00 [INF] [dotnet] D:\Eigene Dateien\Documents\#C#\AUDIO\cscore-master\cscore-master\Samples\Recorder\recorder.csproj contains an App.config file. App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
+2021-07-10 15:31:37.044 +02:00 [INF] [dotnet] Conversion complete!
+2021-07-10 15:31:37.433 +02:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-10 15:31:38.686 +02:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-10 15:31:40.848 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-10 15:31:42.846 +02:00 [WRN] No version of Microsoft.CSharp found that supports ["net40"]; leaving unchanged
+2021-07-10 15:31:43.021 +02:00 [WRN] No version of System.Data.DataSetExtensions found that supports ["net40"]; leaving unchanged
+2021-07-10 15:31:43.488 +02:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.233001) needs added
+2021-07-10 15:31:43.514 +02:00 [INF] Packages to be added: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-10 15:31:43.570 +02:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-10 15:31:43.588 +02:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.233001
+2021-07-10 15:31:45.100 +02:00 [WRN] No version of Microsoft.CSharp found that supports ["net40"]; leaving unchanged
+2021-07-10 15:31:45.118 +02:00 [WRN] No version of System.Data.DataSetExtensions found that supports ["net40"]; leaving unchanged
+2021-07-10 15:31:45.128 +02:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-10 15:31:46.081 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-10 15:31:46.161 +02:00 [INF] TFM needs updated to net5.0-windows
+2021-07-10 15:31:49.881 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-10 15:31:51.770 +02:00 [INF] Updated TFM to net5.0-windows
+2021-07-10 15:31:51.771 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-10 15:31:54.692 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-10 15:31:56.593 +02:00 [INF] Adding Microsoft.Windows.Compatibility 5.0.2
+2021-07-10 15:31:56.595 +02:00 [INF] Packages to be added: Microsoft.Windows.Compatibility, Version=5.0.2
+2021-07-10 15:31:58.281 +02:00 [INF] Applying upgrade step Update NuGet Packages
+2021-07-10 15:31:58.286 +02:00 [INF] Adding package reference: Microsoft.Windows.Compatibility, Version=5.0.2
+2021-07-10 15:32:00.389 +02:00 [INF] Marking package System.Data.DataSetExtensions for removal because it appears to be a transitive dependency
+2021-07-10 15:32:00.403 +02:00 [INF] Removing outdated package reference: System.Data.DataSetExtensions, Version=4.5.0
+2021-07-10 15:32:02.147 +02:00 [INF] Upgrade step Update NuGet Packages applied successfully
+2021-07-10 15:32:02.192 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-10 15:32:02.198 +02:00 [INF] 0 expected template items needed
+2021-07-10 15:32:02.199 +02:00 [INF] Initializing upgrade step Upgrade app config files
+2021-07-10 15:32:02.214 +02:00 [INF] Found 0 app settings for upgrade: 
+2021-07-10 15:32:02.217 +02:00 [INF] Found 0 connection strings for upgrade: 
+2021-07-10 15:32:02.224 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-10 15:32:07.361 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-10 15:32:07.383 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-10 15:32:07.384 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-10 15:32:08.727 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-10 15:32:09.225 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-10 15:32:09.229 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-10 15:32:10.569 +02:00 [INF] Upgrade has completed. Please review any changes.
+2021-07-10 15:32:10.573 +02:00 [INF] No state to save

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CSCli": {
+      "commandName": "Project",
+      "commandLineArgs": " -file:\"D:\\Eigene Dateien\\Documents\\#C#\\AUDIO\\CScore\\CScore\\bin\\Debug\\net5.0\\CScore.dll\" -r:\"RemoveObjAttribute\" -c:\"CSCalliAttribute\""
+    }
+  }
+}

@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Copyright>Florian R.</Copyright>
+    <Description>.NET Sound Library</Description>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE;DEBUG;FLAC_DEBUG</DefineConstants>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>bin\Debug\CScore50.xml</DocumentationFile>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <NoWarn>1701;1702;CA1416;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>D:\Eigene Dateien\Documents\#C#\AUDIO\CScore50\CScore50\CScore50.xml</DocumentationFile>
+    <NoWarn>1701;1702;CA1416;1591</NoWarn>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="@echo off &amp; setLocal EnableDELAYedeXpansion&#xD;&#xA;Echo (Configuration)     $(Configuration)&#xD;&#xA;Echo (DevEnvDir)         $(DevEnvDir)&#xD;&#xA;Echo (FrameworkDir)      $(FrameworkDir)&#xD;&#xA;Echo (FrameworkSDKDir)   $(FrameworkSDKDir)&#xD;&#xA;Echo (FrameworkVersion)  $(FrameworkVersion)&#xD;&#xA;Echo (FxCopDir)          $(FxCopDir)&#xD;&#xA;Echo (IntDir)            $(IntDir)&#xD;&#xA;Echo (OutDir)            $(OutDir)&#xD;&#xA;Echo (Platform)          $(Platform)&#xD;&#xA;Echo (PlatformShortName) $(PlatformShortName)&#xD;&#xA;Echo (ProjectDir)        $(ProjectDir)&#xD;&#xA;Echo (ProjectExt)        $(ProjectExt)&#xD;&#xA;Echo (ProjectFileName)   $(ProjectFileName)&#xD;&#xA;Echo (ProjectName)       $(ProjectName)&#xD;&#xA;Echo (ProjectPath)       $(ProjectPath)&#xD;&#xA;Echo (PublishDir)        $(PublishDir)&#xD;&#xA;Echo (RemoteMachine)     $(RemoteMachine)&#xD;&#xA;Echo (RootNameSpace)     $(RootNameSpace)&#xD;&#xA;Echo (SolutionDir)       $(SolutionDir)&#xD;&#xA;Echo (SolutionExt)       $(SolutionExt)&#xD;&#xA;Echo (SolutionFileName)  $(SolutionFileName)&#xD;&#xA;Echo (SolutionName)      $(SolutionName)&#xD;&#xA;Echo (SolutionPath)      $(SolutionPath)&#xD;&#xA;Echo (TargetDir)         $(TargetDir)&#xD;&#xA;Echo (TargetExt)         $(TargetExt)&#xD;&#xA;Echo (TargetFileName)    $(TargetFileName)&#xD;&#xA;Echo (TargetName)        $(TargetName)&#xD;&#xA;Echo (TargetPath)        $(TargetPath)&#xD;&#xA;Echo (VCInstallDir)      $(VCInstallDir)&#xD;&#xA;Echo (VSInstallDir)      $(VSInstallDir)&#xD;&#xA;Echo (WebDeployPath)     $(WebDeployPath)&#xD;&#xA;Echo (WebDeployRoot)     $(WebDeployRoot)&#xD;&#xA;Echo (MSBuildToolsPath)  $(MSBuildToolsPath)&#xD;&#xA;Echo (MSBuildThisFileFullPath)  $(MSBuildThisFileFullPath)&#xD;&#xA;Echo (TargetFramework)          $(TargetFramework)&#xD;&#xA;Echo (MSBuildBin)               $(MSBuildBin)      &#xD;&#xA;Echo (MSBuildProgramFiles32)    $(MSBuildProgramFiles32)&#xD;&#xA;Echo (MSBuildExtensionsPath32)  $(MSBuildExtensionsPath32)&#xD;&#xA;Echo (MSBuildProjectDirectory)  $(MSBuildProjectDirectory)&#xD;&#xA;Echo (MSBuildBinPath)           $(MSBuildBinPath)&#xD;&#xA;Echo (SolutionDir)              $(SolutionDir)&#xD;&#xA;Echo (%25ProgramFiles%25)           %25ProgramFiles%25 &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;set sdk= %25ProgramFiles%25\dotnet\sdk\6.0.100\.&#xD;&#xA;set framework=%25WINDIR%25\Microsoft.NET\Framework64\v4.0.30319\.&#xD;&#xA;set inlineILCompiler=$(SolutionDir)Tools\InlineILCompiler\InlineILCompiler\$(OutDir)InlineILCompiler.exe&#xA;set cscli=$(SolutionDir)Tools\CSCli\$(OutDir)CSCli.exe&#xD;&#xA;&#xD;&#xA;echo &quot;sdk =&quot; %25sdk%25&#xD;&#xA;echo framework   %25framework%25&#xD;&#xA;echo D:\Eigene Dateien\Documents\#C#\Net5\CScore\Tools\InlineILCompiler\InlineILCompiler\bin\Release\net6.0&#xD;&#xA;echo inlineILCompiler %25inlineILCompiler%25&#xD;&#xA;echo cscli  %25cscli%25&#xA;&#xD;&#xA;Echo ..............................................&#xD;&#xA;echo.&#xD;&#xA;echo test %25sdk%25&#xD;&#xA;echo.&#xD;&#xA;&#xD;&#xA;IF exist %25sdk%25 (echo OK: The Microsoft Windows SDK was found.) else ( echo FAILED: The Microsoft Windows SDK Dir was not found. Check the following path: %25sdk%25  goto EXIT_ERR )&#xD;&#xA;&#xD;&#xA;Echo ..............................................&#xD;&#xA;echo.&#xD;&#xA;echo test %25framework%25&#xD;&#xA;echo.&#xD;&#xA; IF exist %25framework%25 (echo OK: The .NET Framework Dir was found. ) else ( echo FAILED: The Framework-Dir was not found. Check the following path: &quot;%2525framework%2525&quot; goto EXIT_ERR)&#xD;&#xA;&#xD;&#xA;Echo ..............................................&#xD;&#xA;echo.&#xD;&#xA;echo test %25inlineILCompiler%25&#xD;&#xA;echo.&#xD;&#xA;IF exist %25inlineILCompiler%25 (echo OK: Found the inline-il-compiler.) else (echo FAILED: The inline-il-compiler was not found. Check the following path: &quot;%2525inlineILCompiler%2525&quot; goto EXIT_ERR)&#xD;&#xA;&#xD;&#xA;Echo ..............................................&#xD;&#xA;echo.&#xD;&#xA;echo test %25cscli%25&#xD;&#xA;echo.&#xD;&#xA;&#xD;&#xA;IF exist %25cscli%25 (echo OK: Found the cscli-compiler.) else ( echo FAILED: The cscli was not found. Check the following path: &quot;%2525cscli%2525&quot; goto EXIT_ERR)&#xD;&#xA;&#xD;&#xA;Echo ..............................................&#xD;&#xA;echo.&#xD;&#xA;echo Build Configration: $(Configuration)&#xD;&#xA;echo.&#xD;&#xA;&#xD;&#xA;&#xA;IF $(Configuration) == Debug (echo Build-Configuration: DEBUG echo DEBUG=IMPL  echo NO OPTIMIZE   set ilasm_args=/DLL /DEBUG=IMPL ) else ( IF $(Configuration) == Release  (    echo Build-Configuration: RELEASE    echo    NO DEBUG    echo    OPTIMIZE    set ilasm_args=/DLL /OPTIMIZE ) else (   echo FAILED: Invalid Configuration.  goto EXIT_ERR)) &#xD;&#xA;&#xD;&#xA;echo.&#xA;echo.&#xA;echo Calling the inline-il-compiler ... &quot;%25inlineILCompiler%25&quot;&#xA;call &quot;%25inlineILCompiler%25&quot;&#xD;&#xA;&#xD;&#xA;echo.&#xA;echo.&#xA;echo Calling CSCli ... %25cscli%25 -file:$(TargetPath) -r:&quot;RemoveObjAttribute&quot; -c:&quot;CSCalliAttribute&quot;&#xA;call &quot;%25cscli%25&quot; -file:&quot;$(TargetPath)&quot; -r:&quot;RemoveObjAttribute&quot; -c:&quot;CSCalliAttribute&quot;&#xA;&#xA;:EXIT&#xA;  EXIT /B %25errorCode%25&#xA;:EXIT_ERR&#xA;  set errorCode=-1&#xA;goto EXIT&#xA;&#xD;&#xA;" />
+  </Target>
+
+  <ItemGroup>
+    <Compile Remove="CoreAudioAPI\AudioClient_notorg.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.255803" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.DirectoryServices" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

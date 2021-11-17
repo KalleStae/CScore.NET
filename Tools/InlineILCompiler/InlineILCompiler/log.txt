@@ -1,0 +1,32 @@
+2021-07-10 15:49:54.782 +02:00 [INF] Loaded 3 extensions
+2021-07-10 15:49:55.408 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.301\
+2021-07-10 15:49:56.882 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-10 15:49:56.885 +02:00 [INF] Setting entrypoint to only project in solution: D:\Eigene Dateien\Documents\#C#\AUDIO\cscore-master\cscore-master\Tools\InlineILCompiler\InlineILCompiler\inlineIlCompiler.csproj
+2021-07-10 15:49:56.899 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-10 15:49:56.916 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-10 15:50:00.718 +02:00 [INF] Skipping upgrade step Back up project
+2021-07-10 15:50:00.721 +02:00 [INF] Upgrade step Back up project skipped
+2021-07-10 15:50:02.207 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-10 15:50:02.212 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-10 15:50:03.408 +02:00 [INF] No package updates needed
+2021-07-10 15:50:03.409 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-10 15:50:03.412 +02:00 [INF] TFM needs updated to net5.0
+2021-07-10 15:50:04.702 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-10 15:50:06.078 +02:00 [INF] Updated TFM to net5.0
+2021-07-10 15:50:06.079 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-10 15:50:06.376 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-10 15:50:07.305 +02:00 [INF] No package updates needed
+2021-07-10 15:50:07.306 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-10 15:50:07.313 +02:00 [INF] 0 expected template items needed
+2021-07-10 15:50:07.314 +02:00 [INF] Initializing upgrade step Upgrade app config files
+2021-07-10 15:50:07.326 +02:00 [INF] Found 0 app settings for upgrade: 
+2021-07-10 15:50:07.329 +02:00 [INF] Found 0 connection strings for upgrade: 
+2021-07-10 15:50:07.335 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-10 15:50:08.522 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-10 15:50:09.785 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-10 15:50:09.790 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-10 15:50:10.964 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-10 15:50:14.777 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-10 15:50:14.782 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-10 15:50:15.548 +02:00 [INF] Upgrade has completed. Please review any changes.
+2021-07-10 15:50:15.555 +02:00 [INF] No state to save

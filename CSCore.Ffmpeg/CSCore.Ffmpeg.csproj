@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\CSCore.Ffmpeg.XML</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Interops\unused\FFmpeg.avdevice.g.cs" />
+    <None Include="Interops\unused\FFmpeg.avfilter.g.cs" />
+    <None Include="Interops\unused\FFmpeg.postprocess.g.cs" />
+    <None Include="Interops\unused\FFmpeg.swscale.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CScore\CScore.csproj" />
+    <ProjectReference Include="..\Tools\CSCli\CSCli.csproj" />
+    <ProjectReference Include="..\Tools\InlineILCompiler\InlineILCompiler\InlineILCompiler.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="FFmpeg\bin\unix\x64\libavcodec.so.57">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpeg\bin\unix\x64\libavformat.so.57">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpeg\bin\unix\x64\libavutil.so.55">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpeg\bin\unix\x64\libswresample.so.2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpeg\bin\unix\x86\libavcodec.so.57">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpeg\bin\unix\x86\libavformat.so.57">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpeg\bin\unix\x86\libavutil.so.55">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpeg\bin\unix\x86\libswresample.so.2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="6.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.255803">
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FFmpeg\bin\windows\x64\avcodec-57.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFmpeg\bin\windows\x64\avformat-57.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFmpeg\bin\windows\x64\avutil-55.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFmpeg\bin\windows\x64\swresample-2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFmpeg\bin\windows\x86\avcodec-57.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFmpeg\bin\windows\x86\avformat-57.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFmpeg\bin\windows\x86\avutil-55.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FFmpeg\bin\windows\x86\swresample-2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Interops\unused\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Interops\unused\FFmpeg.avdevice.g.cs" />
+    <Compile Remove="Interops\unused\FFmpeg.avfilter.g.cs" />
+    <Compile Remove="Interops\unused\FFmpeg.postprocess.g.cs" />
+    <Compile Remove="Interops\unused\FFmpeg.swscale.g.cs" />
+  </ItemGroup>
+</Project>

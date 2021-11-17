@@ -1,0 +1,50 @@
+2021-07-19 13:27:54.724 +02:00 [INF] Loaded 3 extensions
+2021-07-19 13:27:55.366 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.302\
+2021-07-19 13:27:56.401 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-19 13:27:56.403 +02:00 [INF] Setting entrypoint to only project in solution: D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\AudioPlayerSample\audioplayersample.csproj
+2021-07-19 13:27:56.408 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-19 13:27:56.421 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-19 13:27:57.441 +02:00 [INF] Applying upgrade step Back up project
+2021-07-19 13:27:58.033 +02:00 [INF] Backing up D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\AudioPlayerSample to D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\AudioPlayerSample.backup
+2021-07-19 13:27:58.179 +02:00 [WRN] Could not copy file D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\AudioPlayerSample\log.txt due to 'The process cannot access the file 'D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\AudioPlayerSample\log.txt' because it is being used by another process.'
+2021-07-19 13:27:58.623 +02:00 [INF] Project backed up to D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\AudioPlayerSample.backup
+2021-07-19 13:27:58.624 +02:00 [INF] Upgrade step Back up project applied successfully
+2021-07-19 13:28:00.580 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-19 13:28:01.497 +02:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-19 13:28:01.506 +02:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-19 13:28:01.869 +02:00 [INF] [dotnet] D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\AudioPlayerSample\audioplayersample.csproj contains an App.config file. App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
+2021-07-19 13:28:03.400 +02:00 [INF] [dotnet] Conversion complete!
+2021-07-19 13:28:03.660 +02:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-19 13:28:04.657 +02:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-19 13:28:04.706 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-19 13:28:05.661 +02:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.236301) needs added
+2021-07-19 13:28:05.667 +02:00 [INF] Packages to be added: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.236301
+2021-07-19 13:28:06.361 +02:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-19 13:28:06.388 +02:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.236301
+2021-07-19 13:28:07.729 +02:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-19 13:28:10.994 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-19 13:28:10.999 +02:00 [INF] TFM needs updated to net5.0-windows
+2021-07-19 13:28:12.073 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-19 13:28:13.624 +02:00 [INF] Updated TFM to net5.0-windows
+2021-07-19 13:28:13.624 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-19 13:28:16.160 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-19 13:28:17.222 +02:00 [INF] Adding Microsoft.Windows.Compatibility 5.0.2
+2021-07-19 13:28:17.224 +02:00 [INF] Packages to be added: Microsoft.Windows.Compatibility, Version=5.0.2
+2021-07-19 13:28:17.897 +02:00 [INF] Applying upgrade step Update NuGet Packages
+2021-07-19 13:28:17.903 +02:00 [INF] Adding package reference: Microsoft.Windows.Compatibility, Version=5.0.2
+2021-07-19 13:28:19.459 +02:00 [INF] Marking package System.Data.DataSetExtensions for removal because it appears to be a transitive dependency
+2021-07-19 13:28:19.466 +02:00 [INF] Removing outdated package reference: System.Data.DataSetExtensions, Version=4.5.0
+2021-07-19 13:28:20.992 +02:00 [INF] Upgrade step Update NuGet Packages applied successfully
+2021-07-19 13:28:21.038 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-19 13:28:21.044 +02:00 [INF] 0 expected template items needed
+2021-07-19 13:28:21.044 +02:00 [INF] Initializing upgrade step Upgrade app config files
+2021-07-19 13:28:21.057 +02:00 [INF] Found 0 app settings for upgrade: 
+2021-07-19 13:28:21.061 +02:00 [INF] Found 0 connection strings for upgrade: 
+2021-07-19 13:28:21.067 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-19 13:28:22.112 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-19 13:28:22.954 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-19 13:28:22.959 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-19 13:28:23.632 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-19 13:28:25.194 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-19 13:28:25.198 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-19 13:28:26.013 +02:00 [INF] Upgrade has completed. Please review any changes.

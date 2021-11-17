@@ -1,0 +1,42 @@
+2021-07-19 13:39:40.733 +02:00 [INF] Loaded 3 extensions
+2021-07-19 13:39:41.380 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.302\
+2021-07-19 13:39:42.426 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-19 13:39:42.428 +02:00 [INF] Setting entrypoint to only project in solution: D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\PlayInputDeviceSample\PlayInputDeviceSample.csproj
+2021-07-19 13:39:42.433 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-19 13:39:42.447 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-19 13:39:43.233 +02:00 [INF] Applying upgrade step Back up project
+2021-07-19 13:39:43.971 +02:00 [INF] Backing up D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\PlayInputDeviceSample to D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\PlayInputDeviceSample.backup
+2021-07-19 13:39:43.992 +02:00 [WRN] Could not copy file D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\PlayInputDeviceSample\log.txt due to 'The process cannot access the file 'D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\PlayInputDeviceSample\log.txt' because it is being used by another process.'
+2021-07-19 13:39:44.434 +02:00 [INF] Project backed up to D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\PlayInputDeviceSample.backup
+2021-07-19 13:39:44.436 +02:00 [INF] Upgrade step Back up project applied successfully
+2021-07-19 13:39:45.640 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-19 13:39:46.585 +02:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-19 13:39:46.594 +02:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-19 13:39:48.276 +02:00 [INF] [dotnet] Conversion complete!
+2021-07-19 13:39:48.439 +02:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-19 13:39:49.503 +02:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-19 13:39:51.549 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-19 13:39:52.558 +02:00 [WRN] No version of System.Data.DataSetExtensions found that supports ["net35"]; leaving unchanged
+2021-07-19 13:39:52.565 +02:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.236301) needs added
+2021-07-19 13:39:52.571 +02:00 [INF] Packages to be added: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.236301
+2021-07-19 13:39:53.321 +02:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-19 13:39:53.344 +02:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.236301
+2021-07-19 13:39:54.489 +02:00 [WRN] No version of System.Data.DataSetExtensions found that supports ["net35"]; leaving unchanged
+2021-07-19 13:39:54.492 +02:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-19 13:39:54.589 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-19 13:39:54.596 +02:00 [INF] TFM needs updated to net5.0
+2021-07-19 13:39:55.673 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-19 13:39:56.939 +02:00 [INF] Updated TFM to net5.0
+2021-07-19 13:39:56.940 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-19 13:39:57.649 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-19 13:39:58.592 +02:00 [INF] No package updates needed
+2021-07-19 13:39:58.593 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-19 13:39:58.603 +02:00 [INF] 0 expected template items needed
+2021-07-19 13:39:58.607 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-19 13:39:59.584 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-19 13:39:59.596 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-19 13:39:59.597 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-19 13:40:00.670 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-19 13:40:01.673 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-19 13:40:01.677 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-19 13:40:02.731 +02:00 [INF] Upgrade has completed. Please review any changes.

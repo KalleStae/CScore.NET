@@ -1,0 +1,44 @@
+2021-07-19 13:40:40.652 +02:00 [INF] Loaded 3 extensions
+2021-07-19 13:40:41.360 +02:00 [INF] MSBuild registered from C:\Program Files\dotnet\sdk\5.0.302\
+2021-07-19 13:40:42.382 +02:00 [INF] Initializing upgrade step Select an entrypoint
+2021-07-19 13:40:42.384 +02:00 [INF] Setting entrypoint to only project in solution: D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\RecordToWma\Recordtowma.csproj
+2021-07-19 13:40:42.388 +02:00 [INF] Initializing upgrade step Select project to upgrade
+2021-07-19 13:40:42.402 +02:00 [INF] Initializing upgrade step Back up project
+2021-07-19 13:40:43.329 +02:00 [INF] Applying upgrade step Back up project
+2021-07-19 13:40:44.849 +02:00 [INF] Backing up D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\RecordToWma to D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\RecordToWma.backup
+2021-07-19 13:40:44.910 +02:00 [WRN] Could not copy file D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\RecordToWma\log.txt due to 'The process cannot access the file 'D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\RecordToWma\log.txt' because it is being used by another process.'
+2021-07-19 13:40:45.246 +02:00 [INF] Project backed up to D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\RecordToWma.backup
+2021-07-19 13:40:45.247 +02:00 [INF] Upgrade step Back up project applied successfully
+2021-07-19 13:40:48.218 +02:00 [INF] Initializing upgrade step Convert project file to SDK style
+2021-07-19 13:40:49.241 +02:00 [INF] Applying upgrade step Convert project file to SDK style
+2021-07-19 13:40:49.250 +02:00 [INF] Converting project file format with try-convert, version 0.7.226301
+2021-07-19 13:40:49.570 +02:00 [INF] [dotnet] D:\Eigene Dateien\Documents\#C#\AUDIO\CScore\Samples\RecordToWma\Recordtowma.csproj contains an App.config file. App.config is replaced by appsettings.json in .NET Core. You will need to delete App.config and migrate to appsettings.json if it's applicable to your project.
+2021-07-19 13:40:51.059 +02:00 [INF] [dotnet] Conversion complete!
+2021-07-19 13:40:51.360 +02:00 [INF] Project file converted successfully! The project may require additional changes to build successfully against the new .NET target.
+2021-07-19 13:40:52.297 +02:00 [INF] Upgrade step Convert project file to SDK style applied successfully
+2021-07-19 13:40:53.894 +02:00 [INF] Initializing upgrade step Clean up NuGet package references
+2021-07-19 13:40:54.835 +02:00 [INF] Reference to .NET Upgrade Assistant analyzer package (Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, version 0.2.236301) needs added
+2021-07-19 13:40:54.841 +02:00 [INF] Packages to be added: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.236301
+2021-07-19 13:40:55.705 +02:00 [INF] Applying upgrade step Clean up NuGet package references
+2021-07-19 13:40:55.732 +02:00 [INF] Adding package reference: Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers, Version=0.2.236301
+2021-07-19 13:40:56.907 +02:00 [INF] Upgrade step Clean up NuGet package references applied successfully
+2021-07-19 13:40:58.067 +02:00 [INF] Initializing upgrade step Update TFM
+2021-07-19 13:40:58.072 +02:00 [INF] TFM needs updated to net5.0
+2021-07-19 13:40:59.273 +02:00 [INF] Applying upgrade step Update TFM
+2021-07-19 13:41:00.577 +02:00 [INF] Updated TFM to net5.0
+2021-07-19 13:41:00.578 +02:00 [INF] Upgrade step Update TFM applied successfully
+2021-07-19 13:41:01.356 +02:00 [INF] Initializing upgrade step Update NuGet Packages
+2021-07-19 13:41:02.277 +02:00 [INF] No package updates needed
+2021-07-19 13:41:02.277 +02:00 [INF] Initializing upgrade step Add template files
+2021-07-19 13:41:02.285 +02:00 [INF] 0 expected template items needed
+2021-07-19 13:41:02.286 +02:00 [INF] Initializing upgrade step Upgrade app config files
+2021-07-19 13:41:02.299 +02:00 [INF] Found 0 app settings for upgrade: 
+2021-07-19 13:41:02.302 +02:00 [INF] Found 0 connection strings for upgrade: 
+2021-07-19 13:41:02.307 +02:00 [INF] Initializing upgrade step Update source code
+2021-07-19 13:41:03.306 +02:00 [INF] Initializing upgrade step Move to next project
+2021-07-19 13:41:03.321 +02:00 [INF] Applying upgrade step Move to next project
+2021-07-19 13:41:03.322 +02:00 [INF] Upgrade step Move to next project applied successfully
+2021-07-19 13:41:04.496 +02:00 [INF] Initializing upgrade step Finalize upgrade
+2021-07-19 13:41:05.530 +02:00 [INF] Applying upgrade step Finalize upgrade
+2021-07-19 13:41:05.534 +02:00 [INF] Upgrade step Finalize upgrade applied successfully
+2021-07-19 13:41:07.514 +02:00 [INF] Upgrade has completed. Please review any changes.
