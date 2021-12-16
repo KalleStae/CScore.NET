@@ -1,10 +1,15 @@
 using CSCore;
 using CSCore.Codecs;
+using CSCore.Codecs.AAC;
+using CSCore.Codecs.MP3;
+using CSCore.Codecs.WAV;
+using CSCore.Codecs.WMA;
 using CSCore.CoreAudioAPI;
 using CSCore.SoundOut;
 
 using System;
 using System.ComponentModel;
+using System.IO;
 
 namespace AudioPlayerSample
 {
@@ -85,13 +90,63 @@ namespace AudioPlayerSample
         {
             CleanupPlayback();
 
-            _waveSource =
-                CodecFactory.Instance.GetCodec(filename)
-                    .ToSampleSource()
-                    .ToMono()
-                    .ToWaveSource();
+      string extension = new FileInfo(filename).Extension.ToLowerInvariant();
+      switch (extension)
+      {
+        case ".wav":
+          _waveSource = new WaveFileReader(filename);
+          break;
+
+        case ".mp3":
+          _waveSource = new DmoMp3Decoder(filename);
+          break;
+
+        case ".ogg":
+          // _waveSource = new OggSource(filename).ToWaveSource();
+          break;
+
+        case ".flac":
+          // _waveSource = new FlacFile(filename);
+          break;
+
+        case ".wma":
+          _waveSource = new WmaDecoder(filename);
+          break;
+
+        case ".aac":
+        case ".m4a":
+        case ".mp4":
+          _waveSource = new AacDecoder(filename);
+          break;
+
+        case ".opus":
+          //_waveSource = new OpusSource(resourceItem.Stream, resourceItem.MediaDetails.SampleRate, resourceItem.MediaDetails.Channels);
+          break;
+
+        default:
+          throw new NotSupportedException($"Extension '{extension}' is not supported");
+      }
+      //_waveSource =
+      //          CodecFactory.Instance.GetCodec(filename)
+      //              .ToSampleSource()
+      //              .ToMono()
+      //              .ToWaveSource();
             _soundOut = new WasapiOut() { Latency = 100, Device = device };
-            _soundOut.Initialize(_waveSource);
+
+      WaveFormat waveFormat1 = new WaveFormat(41000,16,2);
+
+     
+    
+
+
+
+
+
+      _soundOut.Initialize(_waveSource);
+
+
+
+
             if (PlaybackStopped != null)
             {
                 _soundOut.Stopped += PlaybackStopped;

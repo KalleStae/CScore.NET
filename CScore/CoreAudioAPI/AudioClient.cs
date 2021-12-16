@@ -410,8 +410,8 @@ namespace CSCore.CoreAudioAPI
                     shareMode == AudioClientShareMode.Shared ? &pclosestMatch : IntPtr.Zero.ToPointer(),
                     ((void**)(*(void**)UnsafeBasePtr))[7]);
 
-                if (pclosestMatch != IntPtr.Zero)
-                {
+        if (pclosestMatch != IntPtr.Zero)
+        {
                     closestMatch = (WaveFormat)Marshal.PtrToStructure(pclosestMatch, typeof(WaveFormat));
                     if (closestMatch.ExtraSize == WaveFormatExtensible.WaveFormatExtensibleExtraSize)
                     {

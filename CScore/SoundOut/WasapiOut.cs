@@ -683,7 +683,6 @@ namespace CSCore.SoundOut
         AUDCLNT_E_BUFFER_SIZE_NOT_ALIGNED_TRY_AGAIN:
             try
             {
-
                 if (!_eventSync)
                 {
                     _audioClient.Initialize(_shareMode, AudioClientStreamFlags.None, latency, 0, _outputFormat,
@@ -785,15 +784,18 @@ namespace CSCore.SoundOut
 
         private WaveFormat SetupWaveFormat(IWaveSource source, AudioClient audioClient)
         {
-            // **************************************
-            // Change because Error IAudioClient::Initialize caused an error: 0x88890008, "Unknown HRESULT".
-            // I dont know if this is correct for other methods an files 
-            // ****************************************
             WaveFormat waveFormat = source.WaveFormat;
-            WaveFormat closestMatch;
+            WaveFormat closestMatch =null;
             WaveFormat finalFormat = waveFormat;
             //check whether initial format is supported
-            if (!audioClient.IsFormatSupported(_shareMode, waveFormat, out closestMatch))
+           
+            // **************************************
+            // Change because Error IAudioClient::Initialize caused an error: 0x88890008, "Unknown HRESULT".
+            // I dont know if this is correct for other methods and files 
+            // ****************************************
+
+      //if (!audioClient.IsFormatSupported(_shareMode, waveFormat, out closestMatch))
+      if (true)
             {
                 //initial format is not supported -> maybe there was some kind of close match ...
                 //we don't know why, but for some reason, the suggested closestMatch must not be supported ... see #159
