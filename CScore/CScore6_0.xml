@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>CScore50</name>
+        <name>CScore</name>
     </assembly>
     <members>
         <member name="T:CSCore.AudioEncoding">
@@ -16679,34 +16679,6 @@
             Gets the supported formats.
             </summary>
         </member>
-        <member name="T:CSCore.StoppedEventArgs">
-            <summary>
-                Provides data for any stopped operations.
-            </summary>
-        </member>
-        <member name="M:CSCore.StoppedEventArgs.#ctor">
-            <summary>
-                Initializes a new instance of the <see cref="T:CSCore.StoppedEventArgs" /> class.
-            </summary>
-        </member>
-        <member name="M:CSCore.StoppedEventArgs.#ctor(System.Exception)">
-            <summary>
-                Initializes a new instance of the <see cref="T:CSCore.StoppedEventArgs" /> class.
-            </summary>
-            <param name="exception">The associated exception. Can be null.</param>
-        </member>
-        <member name="P:CSCore.StoppedEventArgs.HasError">
-            <summary>
-                Gets a value which indicates whether the operation stopped due to an error. True means that that the operation
-                stopped due to an error. False means that the operation did not stop due to an error.
-            </summary>
-        </member>
-        <member name="P:CSCore.StoppedEventArgs.Exception">
-            <summary>
-                Gets the associated <see cref="P:CSCore.StoppedEventArgs.Exception" /> which caused the operation to stop.
-            </summary>
-            <value>Can be null.</value>
-        </member>
         <member name="T:CSCore.Streams.BlockReadEventArgs`1">
             <summary>
             Provides data for the <see cref="E:CSCore.Streams.NotificationSource.BlockRead"/> event.
@@ -19621,6 +19593,34 @@
             <summary>
             Default destructor which calls <see cref="M:CSCore.Streams.WriteableBufferingSource.Dispose(System.Boolean)"/>.
             </summary>
+        </member>
+        <member name="T:CSCore.StoppedEventArgs">
+            <summary>
+                Provides data for any stopped operations.
+            </summary>
+        </member>
+        <member name="M:CSCore.StoppedEventArgs.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:CSCore.StoppedEventArgs" /> class.
+            </summary>
+        </member>
+        <member name="M:CSCore.StoppedEventArgs.#ctor(System.Exception)">
+            <summary>
+                Initializes a new instance of the <see cref="T:CSCore.StoppedEventArgs" /> class.
+            </summary>
+            <param name="exception">The associated exception. Can be null.</param>
+        </member>
+        <member name="P:CSCore.StoppedEventArgs.HasError">
+            <summary>
+                Gets a value which indicates whether the operation stopped due to an error. True means that that the operation
+                stopped due to an error. False means that the operation did not stop due to an error.
+            </summary>
+        </member>
+        <member name="P:CSCore.StoppedEventArgs.Exception">
+            <summary>
+                Gets the associated <see cref="P:CSCore.StoppedEventArgs.Exception" /> which caused the operation to stop.
+            </summary>
+            <value>Can be null.</value>
         </member>
         <member name="P:CSCore.Tags.ID3.Frames.PictureFrame.Image">
             <summary>

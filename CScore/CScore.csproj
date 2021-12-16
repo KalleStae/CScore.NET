@@ -6,6 +6,7 @@
     <Description>.NET Sound Library</Description>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <SignAssembly>False</SignAssembly>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -20,7 +21,7 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <DocumentationFile>D:\Eigene Dateien\Documents\#C#\AUDIO\CScore50\CScore50\CScore50.xml</DocumentationFile>
+    <DocumentationFile></DocumentationFile>
     <NoWarn>1701;1702;CA1416;1591</NoWarn>
   </PropertyGroup>
 
