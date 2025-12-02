@@ -24,6 +24,7 @@ namespace Recorder
         private readonly GraphVisualization _graphVisualization = new GraphVisualization();
         private IWaveSource _finalSource;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public MMDevice SelectedDevice
         {
             get { return _selectedDevice; }

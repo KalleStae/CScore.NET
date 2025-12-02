@@ -33,6 +33,7 @@ namespace AudioPlayerSample
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public TimeSpan Position
         {
             get
@@ -66,6 +67,7 @@ namespace AudioPlayerSample
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int Volume
         {
             get
